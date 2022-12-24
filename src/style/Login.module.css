@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/login-background.jpg);
+  flex-direction: column;
+}
+.imgholder > img {
+  width: 10%;
+}
+.imgholder > img:not(:last-child) {
+  margin-right: 2rem;
+}
+.imgholder {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.takebutton {
+  width: 30rem;
+  height: 3.5rem;
+  background-color: #065ddd !important;
+  margin-bottom: 2rem !important;
+}
+.discrp {
+  width: 30rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.header {
+  z-index: 6000;
+  margin-bottom: 100px;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #080911;
+  align-items: center;
+}
+.loginbutton {
+  border: 1px solid white !important;
+  height: 3rem;
+  width: 5rem;
+  background-color: black;
+  margin: 0 2rem !important;
+}
+.loginbutton:hover {
+  background-color: rgba(0, 0, 0, 0.808) !important;
+}
+.logoutbtn:hover {
+  background-color: rgba(0, 0, 0, 0.808) !important;
+  transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+}
+.logoutbtn {
+  z-index: 50000 !important;
+  background-color: gray !important;
+  position: relative;
+  top: 0px;
+  right: 20px;
+  visibility: hidden;
+  width: 6rem;
+  opacity: 0;
+  transition: all 0s, opacity 0.5s linear !important;
+  -webkit-transition: all 0s, opacity 0.5s linear !important;
+  -moz-transition: all 0s, opacity 0.5s linear !important;
+  -ms-transition: all 0s, opacity 0.5s linear !important;
+  -o-transition: all 0s, opacity 0.5s linear !important;
+}
+.profilepic:hover + .logoutbtn,
+.logoutbtn:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.profilepic {
+  width: 60px;
+}
+.disneylogo {
+  width: 6rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+  margin: 0 2rem !important;
+}
+.sidetext {
+  position: relative;
+  cursor: pointer;
+}
+.sidetext::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+}
+.sidetext:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

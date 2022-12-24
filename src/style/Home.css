@@ -1,0 +1,87 @@
+.maincontainer {
+  background-image: url(../images/home-background.png);
+  position: relative;
+  top: 60px;
+  overflow-x: hidden;
+  height: 100vh;
+}
+.big {
+  overflow-y: hidden !important;
+}
+.slick-next {
+  opacity: 0 !important;
+}
+.slick-next:hover {
+  opacity: 1 !important;
+}
+.slick-prev {
+  left: 0 !important;
+}
+.talk {
+  z-index: 1 !important;
+  position: relative !important;
+  top: 60px;
+}
+.Slider > button {
+  z-index: 5;
+  opacity: 0 !important;
+  height: 100%;
+  width: 5vw;
+}
+
+.Slider > button:hover {
+  opacity: 1 !important;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+ul::before,
+li::before,
+button::before {
+  font-size: 20px !important;
+  color: white !important;
+}
+.slick-list {
+  overflow: initial !important;
+  width: 90%;
+}
+.wrap {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+
+  cursor: pointer;
+  position: relative;
+  margin: 0 0.5rem;
+}
+a {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 4px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative !important;
+}
+.img:hover {
+  padding: 0;
+  border: 4px solid rgba(249, 249, 249, 0.8);
+  transition-duration: 300ms;
+}
+.wrapper {
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  margin: 0 3rem !important;
+}

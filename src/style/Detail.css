@@ -1,0 +1,123 @@
+.main {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  top: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+.buttons {
+  margin-left: 10rem;
+  display: flex;
+  position: absolute;
+  top: 37%;
+  z-index: 5000;
+}
+
+.play {
+}
+.trailer {
+}
+.button {
+  background: white;
+  border: 1px solid rgb(249, 249, 249);
+  color: black;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: relative;
+}
+.button::before {
+  border: 1px solid rgb(249, 249, 249);
+  border-radius: 6px;
+
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+  z-index: 5;
+}
+.button:hover::before {
+  width: 100%;
+}
+.add {
+  margin-right: 16px;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.talk2 {
+  z-index: 55;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 3rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.firstb {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+  .button {
+    width: 150px;
+    font-size: 3vw;
+  }
+  .firstb {
+    flex-direction: column;
+  }
+  .firstb > div {
+    margin-top: 1rem;
+    position: relative;
+    top: -100px;
+  }
+  .secondb {
+    position: relative;
+    top: -100px;
+  }
+  .buttons {
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons > div {
+    margin-top: 1rem;
+  }
+  .talk2 {
+    font-size: 3vw;
+    width: auto;
+    height: auto;
+  }
+}
